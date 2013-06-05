@@ -1,0 +1,37 @@
+{
+  "name": "node-mixpanel-data-exporter",
+  "version": "0.0.2",
+  "description": "Wrapper for Mixpanel Data API",
+  "author": "Type <tykelewis@gmail.com>",
+  "dependencies": {
+    "underscore": "1.4.4",
+    "request": "2.21.0"
+  },
+  "devDependencies": {
+    "mocha": "1.x",
+    "should": "0.6.x"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "1777ea909597fbf769f348e4d739fdf71e03dfbf",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tyke/node-mixpanel-data-exporter.git"
+  },
+  "keywords": [
+    "mixpanel",
+    "data",
+    "api",
+    "export",
+    "metrics",
+    "node",
+    "nodejs"
+  ],
+  "license": "MIT"
+}
