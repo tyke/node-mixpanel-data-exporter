@@ -1,6 +1,6 @@
 {
   "name": "node-mixpanel-data-exporter",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Wrapper for Mixpanel Data API",
   "author": "Type <tykelewis@gmail.com>",
   "dependencies": {
