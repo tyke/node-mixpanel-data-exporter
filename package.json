@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "mocha": "1.x",
-    "should": "0.6.x"
+    "should": "0.6.x",
+    "istanbul": "0.1.x"
   },
   "readmeFilename": "README.md",
   "gitHead": "1777ea909597fbf769f348e4d739fdf71e03dfbf",
