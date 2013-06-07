@@ -3,6 +3,12 @@ node-mixpanel-data-exporter
 
 This provides a wrapper to Mixpanel's [Data Export API](https://mixpanel.com/docs/api-documentation/data-export-api)
 
+Install
+-------
+<pre>
+npm install node-mixpanel-data-exporter
+</pre>
+
 Quick Start
 -----------
 Initialize
