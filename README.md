@@ -14,7 +14,7 @@ Quick Start
 Initialize
 <pre>
   //initialize with required api_key and api_secret
-  var Mixpanel_Exporter = require('./mixpanel_exporter')
+  var Mixpanel_Exporter = require('mixpanel_exporter')
     , mixpanel_exporter = new Mixpanel_Exporter({
           api_key: 'your api key'
         , api_secret: 'your api secret'
