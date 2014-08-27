@@ -1,6 +1,7 @@
 var crypto = require('crypto')
   , url = require('url')
   , _ = require('underscore')
+  , Buffer = require('buffer').Buffer
   , mixpanel_methods = [
         'events'
       , 'events/top'
@@ -36,7 +37,7 @@ mixpanel_exporter.prototype.alphabetical_sort = function(obj) {
     }, {})
 }
 mixpanel_exporter.prototype.hash = function(string) {
-    return crypto.createHash('md5').update(string).digest('hex')
+    return crypto.createHash('md5').update(new Buffer(string).toString('binary')).digest('hex')
 }
 mixpanel_exporter.prototype.get_signature = function(obj) {
     return this.hash(_.reduce(obj, function(sig, val, key) {
