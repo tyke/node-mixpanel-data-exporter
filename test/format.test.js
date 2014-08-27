@@ -82,7 +82,6 @@ describe('Methods', function() {
     })
     describe('Hash', function() {
         it('should md5 a string', function() {
-            require('crypto').createHash('md5').update('hash_me').digest('hex').should.equal(obj.hash('hash_me'))
             var md5 = require('crypto').createHash('md5').update(new Buffer('hash_me').toString('binary')).digest('hex').should.equal(obj.hash('hash_me'))
         })
         it('should md5 a string with utf-8 characters', function() {

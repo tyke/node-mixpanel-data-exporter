@@ -1,7 +1,8 @@
+console.log(Buffer)
+
 var crypto = require('crypto')
   , url = require('url')
   , _ = require('underscore')
-  , Buffer = require('buffer').Buffer
   , mixpanel_methods = [
         'events'
       , 'events/top'
