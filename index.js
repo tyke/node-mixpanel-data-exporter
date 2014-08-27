@@ -1,5 +1,3 @@
-console.log(Buffer)
-
 var crypto = require('crypto')
   , url = require('url')
   , _ = require('underscore')
