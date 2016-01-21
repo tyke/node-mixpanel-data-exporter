@@ -16,6 +16,7 @@ var crypto = require('crypto')
       , 'segmentation/average'
       , 'retention'
       , 'engage'
+      , 'export'
     ]
 
 var mixpanel_exporter = function(args) {
@@ -63,6 +64,10 @@ mixpanel_exporter.prototype.generate_args = function(endpoint, _args) {
     var sorted_args = this.alphabetical_sort(args)
       , signature = this.get_signature(sorted_args)
       , parsed_url = _.clone(this.parsed_url)
+      
+    if (!(endpoint.match(/%export%/===null))) {
+      parsed_url = url.parse('http://data.mixpanel.com/api/2.0/', true);
+    }
 
     return url.format(_.extend(parsed_url, {
         pathname: parsed_url.path += endpoint
